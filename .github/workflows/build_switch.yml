@@ -1,6 +1,7 @@
 name: Switch
 # Run this workflow every time a new commit pushed to your repository
 on: 
+    workflow_dispatch:
     push:
     schedule:
       - cron: '0 0 * * 0' # Once per week on Sunday 00:00
