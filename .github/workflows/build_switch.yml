@@ -25,7 +25,7 @@ jobs:
          zip -r plutoboy_switch.zip Plutoboy.nro
       - 
        name: Archive Build Output
-       uses: actions/upload-artifact@v2
+       uses: actions/upload-artifact@v4
        with:
           name: plutoboy_switch
           path: plutoboy_switch.zip
