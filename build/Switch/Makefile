@@ -65,10 +65,10 @@ ASFLAGS	:=	$(ARCH)
 LDFLAGS	=	-specs=$(DEVKITPRO)/libnx/switch.specs -g $(ARCH) -Wl,-Map,$(notdir $*.map)
 
 #LIBS	:= -lSDL2_mixer -lSDL2 -lSDL2_image -lnx -lFLAC -lmikmod -lvorbisidec -logg -lm -lEGL -lGLESv2
-LIBS := -lSDL2_gfx -lSDL2_image -lSDL2_mixer -lSDL2 -lSDL2_ttf -lwebp -lfreetype -lpng\
-			-lpng -lz -ljpeg -lglad -lEGL -lglapi -ldrm_nouveau  \
-			-lvorbisidec -logg -lmpg123 -lmodplug -lstdc++ \
-			-lnx -lm -lbz2
+LIBS := -lSDL2_gfx -lSDL2_image -lSDL2_mixer -lSDL2 -lSDL2_ttf -lwebp -lharfbuzz \
+                        -lfreetype -lpng -lpng -lz -ljpeg -lglad -lEGL -lglapi \
+                        -ldrm_nouveau -lvorbisidec -logg -lmpg123 -lmodplug \
+                        -lstdc++ -lnx -lm -lbz2
 
 #---------------------------------------------------------------------------------
 # list of directories containing libraries, this must be the top level containing
